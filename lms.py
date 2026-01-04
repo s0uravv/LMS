@@ -12,7 +12,7 @@ try:
     db = mysql.connector.connect(
         host="localhost",
         user="root",
-        password="your_password",  # अपना SQL पासवर्ड यहाँ डालें
+        password="password", 
         database="library"
     )
     c = db.cursor()
@@ -26,11 +26,10 @@ USERID = 0
 
 
 # ---------------------------------------------------------
-# [span_1](start_span)HELPER FUNCTIONS[span_1](end_span)
 # ---------------------------------------------------------
 
 def length(i):
-    # Formatting helper from PDF
+    
     s = str(i)
     return len(s) + 2
 
